@@ -1,0 +1,51 @@
+.collapse {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  div {
+    width: 100%;
+    border-radius: 5px;
+    background-color: #f6f6f6;
+    p {
+      padding: 20px;
+      margin: 0;
+      color: $mainColor;
+      font-family: $montserrat;
+    }
+    ul {
+      margin: 0;
+      padding: 20px;
+    }
+    li {
+      list-style: none;
+      color: $mainColor;
+      font-family: $montserrat;
+    }
+  }
+  .infoCollapse {
+    background-color: $mainColor;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1.5%;
+    box-sizing: border-box;
+  }
+  h3 {
+    font-family: $montserrat;
+    font-weight: 500;
+    color: white;
+    margin: 0;
+  }
+  img {
+    height: 20px;
+    rotate: 90deg;
+    padding: 5px;
+    transition: 0.5s transform ease;
+
+    &.rotateArrowReverse {
+      transform: rotate(180deg);
+    }
+  }
+}

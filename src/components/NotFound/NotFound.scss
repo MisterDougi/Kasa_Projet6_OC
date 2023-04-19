@@ -1,0 +1,70 @@
+.blocNotFound {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1440px;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 180px;
+  @media screen and (max-width: 900px) {
+    margin-top: 30px;
+    margin-bottom: 100px;
+  }
+  @media screen and (max-width: 600px) {
+    margin-top: 50px;
+    margin-bottom: 150px;
+  }
+  .bloc404 {
+    display: inline-block;
+    text-align: center;
+    font-size: 288px;
+    font-family: $montserrat;
+    color: $mainColor;
+    font-weight: 700;
+    @media screen and (max-width: 900px) {
+      font-size: 200px;
+    }
+    @media screen and (max-width: 600px) {
+      font-size: 96px;
+    }
+  }
+  .oups {
+    display: inline-block;
+    text-align: center;
+    font-size: 36px;
+    font-family: $montserrat;
+    color: $mainColor;
+    font-weight: 500;
+    @media screen and (max-width: 900px) {
+      font-size: 30px;
+    }
+    @media screen and (max-width: 600px) {
+      font-size: 18px;
+    }
+  }
+  p {
+    margin: 0;
+  }
+}
+.linkRetourAccueil {
+  max-width: 1440px;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 50px;
+  text-align: center;
+  @media screen and (max-width: 900px) {
+    margin-bottom: 30px;
+  }
+  @media screen and (max-width: 600px) {
+    margin-bottom: 0;
+  }
+  a {
+    text-decoration: none;
+    font-family: $montserrat;
+    color: $mainColor;
+  }
+  :hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}

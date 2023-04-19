@@ -1,0 +1,33 @@
+.infosLogementDisplay {
+  max-width: 1240px;
+  width: clamp(335px, 90vw, 1240px);
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-bottom: 25px;
+  @media screen and (max-width: 980px) {
+    flex-direction: column;
+  }
+  .hostAndRatingDisplay {
+    @media screen and (max-width: 980px) {
+      padding: 5px;
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
+
+.collapseLogementDisplay {
+  display: flex;
+  justify-content: space-between;
+  width: clamp(335px, 90vw, 1240px);
+  margin: auto;
+  gap: 75px;
+  @media screen and (max-width: 650px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}

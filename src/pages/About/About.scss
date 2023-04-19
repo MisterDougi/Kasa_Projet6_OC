@@ -1,0 +1,8 @@
+.collapsesDisplay {
+  max-width: 1440px;
+  width: 60%;
+  margin: auto;
+  @media screen and (max-width: 900px) {
+    width: 90%;
+  }
+}

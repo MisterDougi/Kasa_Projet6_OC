@@ -1,0 +1,41 @@
+// Variables
+@import "./variables.scss";
+
+//Components
+@import "./components/NavBar/NavBar.scss";
+@import "./components/Banner/Banner.scss";
+@import "./components/ListCards/ListCards.scss";
+@import "./components/Card/Card.scss";
+@import "./components/NotFound/NotFound.scss";
+@import "./components/BannerLog/BannerLog.scss";
+@import "./components/Footer/Footer.scss";
+@import "./components/Collapse/Collapse.scss";
+@import "./components/Tag/Tag.scss";
+@import "./components/TitreLoc/TitreLoc.scss";
+@import "./components/Host/Host.scss";
+@import "./components/InfosLog/InfosLog.scss";
+@import "./components/NotFound/NotFound.scss";
+@import "./components/Rating/Rating.scss";
+
+//Pages
+@import "./pages/About/About.scss";
+@import "./pages/Logement/Logement.scss";
+
+// Global
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+
+  #root {
+    height: 100%;
+
+    .layout {
+      position: relative;
+      height: max-content;
+      min-height: calc(100% - 200px);
+      padding-bottom: 200px;
+    }
+  }
+}

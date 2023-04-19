@@ -1,0 +1,20 @@
+.titreLocationDisplay {
+  margin-bottom: 20px;
+}
+.tagDisplay {
+  display: flex;
+  gap: 10px;
+  @media screen and (max-width: 575px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0 10px 0;
+  }
+  div {
+    @media screen and (max-width: 500px) {
+      height: 30px;
+    }
+  }
+}
+.hostDisplay {
+  display: flex;
+}

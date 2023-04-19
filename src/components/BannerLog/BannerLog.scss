@@ -1,0 +1,45 @@
+.sliderDisplay {
+  position: relative;
+  width: clamp(335px, 90vw, 1240px);
+  height: 415px;
+  margin: auto;
+  border-radius: 25px;
+  margin-bottom: 30px;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+  }
+  .compteur {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+  }
+  button {
+    position: absolute;
+    appearance: none;
+    border: none;
+    width: 50px;
+    height: 80px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    &.prev {
+      background-image: url("./assets/leftArrow.svg");
+      top: 50%;
+      transform: translateY(-50%) rotate(180deg);
+      left: 1%;
+    }
+    &.next {
+      background-image: url("./assets/leftArrow.svg");
+      top: 50%;
+      transform: translateY(-50%);
+      right: 1%;
+    }
+  }
+}

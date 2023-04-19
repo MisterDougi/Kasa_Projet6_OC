@@ -1,0 +1,33 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  background-color: black;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .footerContainer {
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  img {
+    width: 125px;
+    height: 40px;
+    filter: brightness(10);
+    @media screen and (max-width: 450px) {
+      width: 100px;
+    }
+  }
+  p {
+    color: white;
+    letter-spacing: 0.1rem;
+    font-size: 24px;
+    @media screen and (max-width: 450px) {
+      font-size: 16px;
+    }
+  }
+}

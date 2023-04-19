@@ -1,0 +1,52 @@
+.cardContainer {
+  position: relative;
+  width: 340px;
+  height: 340px;
+  border-radius: 25px;
+  max-width: calc(100% / 3 - 40px);
+
+  @media screen and (max-width: 1100px) {
+    width: 100%;
+    max-width: calc(100% / 2 - 40px);
+  }
+  @media screen and (max-width: 750px) {
+    max-width: 100%;
+    max-width: calc(100% - 25px);
+  }
+
+  .cardImg {
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 25px;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+    &:after {
+      position: absolute;
+      content: "";
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      border-radius: 25px;
+      background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.25) 75%
+      );
+    }
+  }
+  h3 {
+    font-family: $montserrat;
+    padding: 0.5%;
+    font-size: 18px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    margin: 0;
+    color: white;
+  }
+}
