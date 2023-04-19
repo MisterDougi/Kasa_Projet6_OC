@@ -13,6 +13,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path="/kasa_projet6_oc" element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="logement/:id" element={<Logement />} />
           <Route path="*" element={<Navigate replace to="/404" />} />
